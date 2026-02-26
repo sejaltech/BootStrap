@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5.3 Complete Showcase | AstraTech Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="script" href="script.js">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="#home"><i class="bi bi-rocket"></i> BootStrap</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carousel">Showcase</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#pricing">Pricing</a></li>
+                            <li><a class="dropdown-item" href="#gallery">Gallery</a></li>
+                            <li><a class="dropdown-item" href="#alerts">Alerts</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#contact">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#form">Forms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">Menu</a>
+                    </li>
+                </ul>
+                <!-- Search Form -->
+                <form class="search-form ms-3" role="search">
+                    <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--  Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="hero-title">Bootstrap 5.3 Showcase</h1>
+                    <p class="hero-subtitle">Explore modern UI components, responsive design, and creative implementation with Bootstrap framework.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#welcomeModal">
+                            <i class="bi bi-play-circle"></i> Get Started
+                        </button>
+                        <button class="btn btn-secondary btn-lg" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu">
+                            <i class="bi bi-menu-button"></i> Explore
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div class="display-1 gradient-text mb-4">
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section-->
+    <section class="carousel-section" id="carousel">
+        <div class="container">
+            <h2 class="section-title mb-5">Featured Showcase</h2>
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex align-items-center justify-content-center" style="min-height: 400px; background: linear-gradient(135deg, #6366f1, #8b5cf6);">
+                            <h1 class="text-white">Slide 1: Welcome</h1>
+                        </div>
+                        <div class="carousel-caption">
+                            <h5>Bootstrap Excellence</h5>
+                            <p>Build responsive, modern websites with Bootstrap 5.3's powerful components</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex align-items-center justify-content-center" style="min-height: 400px; background: linear-gradient(135deg, #8b5cf6, #ec4899);">
+                            <h1 class="text-white">Slide 2: Innovation</h1>
+                        </div>
+                        <div class="carousel-caption">
+                            <h5>Latest Features</h5>
+                            <p>Explore cutting-edge UI components and responsive utilities</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex align-items-center justify-content-center" style="min-height: 400px; background: linear-gradient(135deg, #ec4899, #f43f5e);">
+                            <h1 class="text-white">Slide 3: Creativity</h1>
+                        </div>
+                        <div class="carousel-caption">
+                            <h5>Design Freedom</h5>
+                            <p>Combine creativity with powerful Bootstrap framework</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section-->
+    <section class="pricing-section" id="pricing">
+        <div class="container">
+            <h2 class="section-title mb-5">Pricing Plans</h2>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="pricing-card">
+                        <div class="price-badge">$9</div>
+                        <h3 class="mb-3">Starter</h3>
+                        <p class="text-muted-custom mb-4">Perfect for beginners</p>
+                        <ul class="pricing-features">
+                            <li>Bootstrap Components</li>
+                            <li>Grid System</li>
+                            <li>Basic Utilities</li>
+                            <li>Community Support</li>
+                        </ul>
+                        <button class="btn btn-secondary w-100 mt-4">Choose Plan</button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-card featured">
+                        <span class="badge badge-primary-glow">POPULAR</span>
+                        <div class="price-badge">$29</div>
+                        <h3 class="mb-3">Professional</h3>
+                        <p class="text-muted-custom mb-4">Most popular choice</p>
+                        <ul class="pricing-features">
+                            <li>All Starter features</li>
+                            <li>Advanced Components</li>
+                            <li>Custom Themes</li>
+                            <li>Priority Support</li>
+                            <li>Premium Addons</li>
+                        </ul>
+                        <button class="btn btn-primary w-100 mt-4">Choose Plan</button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-card">
+                        <div class="price-badge">$99</div>
+                        <h3 class="mb-3">Enterprise</h3>
+                        <p class="text-muted-custom mb-4">For large teams</p>
+                        <ul class="pricing-features">
+                            <li>All Professional features</li>
+                            <li>Unlimited Projects</li>
+                            <li>API Access</li>
+                            <li>Dedicated Support</li>
+                            <li>Custom Development</li>
+                        </ul>
+                        <button class="btn btn-secondary w-100 mt-4">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPARE PLANS TABLE -->
+    <section id="compare" class="container my-5">
+      <h2 class="text-center section-title mb-5">Compare Plans</h2>
+      <div class="table-responsive">
+        <table class="table table-dark table-striped align-middle">
+          <thead>
+            <tr style="border-bottom: 2px solid rgba(99, 102, 241, 0.5);">
+              <th class="text-light fw-bold" style="padding: 20px; color: #e2e8f0;">Feature</th>
+              <th class="text-center text-light fw-bold" style="padding: 20px; color: #e2e8f0;">Starter</th>
+              <th class="text-center text-light fw-bold" style="padding: 20px; color: #e2e8f0;">Professional</th>
+              <th class="text-center text-light fw-bold" style="padding: 20px; color: #e2e8f0;">Enterprise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td class="fw-bold" style="padding: 15px 20px;">Public</td>
+              <td class="text-center" style="padding: 15px 20px;">
+                <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+              </td>
+              <td class="text-center" style="padding: 15px 20px;">
+                <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+              </td>
+              <td class="text-center" style="padding: 15px 20px;">
+                <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+              </td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td class="fw-bold" style="padding: 15px 20px;">Private</td>
+              <td class="text-center" style="padding: 15px 20px;">
+                <i class="bi bi-x-circle text-danger" style="font-size: 1.3rem;"></i>
+              </td>
+              <td class="text-center" style="padding: 15px 20px;">
+                <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+              </td>
+              <td class="text-center" style="padding: 15px 20px;">
+                <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+              </td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td class="fw-bold" style="padding: 15px 20px;">Permissions</td>
+              <td class="text-center" style="padding: 15px 20px;">
+                <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+              </td>
+              <td class="text-center" style="padding: 15px 20px;">
+                <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+              </td>
+              <td class="text-center" style="padding: 15px 20px;">
+                <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+              </td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td class="fw-bold" style="padding: 15px 20px;">Sharing</td>
+              <td class="text-center" style="padding: 15px 20px;">
+                <i class="bi bi-x-circle text-danger" style="font-size: 1.3rem;"></i>
+              </td>
+              <td class="text-center" style="padding: 15px 20px;">
+                <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+              </td>
+              <td class="text-center" style="padding: 15px 20px;">
+                <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+              </td>
+            </tr>
+            <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+              <td class="fw-bold" style="padding: 15px 20px;">Unlimited members</td>
+              <td class="text-center" style="padding: 15px 20px;">
+                <i class="bi bi-x-circle text-danger" style="font-size: 1.3rem;"></i>
+              </td>
+              <td class="text-center" style="padding: 15px 20px;">
+                <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+              </td>
+              <td class="text-center" style="padding: 15px 20px;">
+                <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+              </td>
+            </tr>
+            <tr>
+              <td class="fw-bold" style="padding: 15px 20px;">Extra security</td>
+              <td class="text-center" style="padding: 15px 20px;">
+                <i class="bi bi-x-circle text-danger" style="font-size: 1.3rem;"></i>
+              </td>
+              <td class="text-center" style="padding: 15px 20px;">
+                <i class="bi bi-x-circle text-danger" style="font-size: 1.3rem;"></i>
+              </td>
+              <td class="text-center" style="padding: 15px 20px;">
+                <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Gallery Section (Responsive Grid) -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title mb-5">Gallery Showcase</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=400&h=400&fit=crop" alt="Design">
+                        <div class="gallery-overlay">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#galleryModal1">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=400&fit=crop" alt="Development">
+                        <div class="gallery-overlay">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#galleryModal2">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="https://i.pinimg.com/736x/59/61/38/596138beb239ada8aab67dbb4e288be7.jpg" alt="Innovation">
+                        <div class="gallery-overlay">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#galleryModal3">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="https://i.pinimg.com/736x/1d/f3/42/1df34275bce4d49b9bac6d0b0fe9bc6b.jpg" alt="Technology">
+                        <div class="gallery-overlay">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#galleryModal4">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="https://i.pinimg.com/736x/d4/69/50/d4695031737df3ef36832dbdd335b97c.jpg" alt="Creative">
+                        <div class="gallery-overlay">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#galleryModal5">View</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=400&fit=crop" alt="Startup">
+                        <div class="gallery-overlay">
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#galleryModal6">View</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Alerts Section -->
+    <section class="alert-section" id="alerts">
+        <div class="container">
+            <h2 class="section-title mb-5">Alert Messages</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="alert alert-success" role="alert">
+                        <strong><i class="bi bi-check-circle"></i> Success!</strong> Your action completed successfully.
+                    </div>
+                    <div class="alert alert-info" role="alert">
+                        <strong><i class="bi bi-info-circle"></i> Info:</strong> Here's some helpful information.
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="alert alert-warning" role="alert">
+                        <strong><i class="bi bi-exclamation-triangle"></i> Warning!</strong> Be careful with this action.
+                    </div>
+                    <div class="alert alert-danger" role="alert">
+                        <strong><i class="bi bi-x-circle"></i> Error!</strong> Something went wrong.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  Badges & Buttons Section -->
+    <section class="py-80" style="padding: 80px 0; background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);">
+        <div class="container">
+            <h2 class="section-title mb-5">Badges & Buttons</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h4 class="mb-4" style="color: #cbd5e1;">Badge Examples</h4>
+                    <div>
+                        <span class="badge bg-primary">Primary</span>
+                        <span class="badge bg-success">Success</span>
+                        <span class="badge bg-danger">Danger</span>
+                        <span class="badge bg-warning text-dark">Warning</span>
+                        <span class="badge bg-info">Info</span>
+                        <span class="badge bg-secondary">Secondary</span>
+                    </div>
+                    <hr style="border-color: rgba(255,255,255,0.1); margin: 30px 0;">
+                    <div>
+                        <span class="badge badge-primary-glow">Glow Primary</span>
+                        <span class="badge bg-success">Pill Badge</span>
+                        <span class="badge bg-danger">New</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="mb-4" style="color: #cbd5e1;">Button Examples</h4>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary">Primary Button</button>
+                        <button class="btn btn-secondary">Secondary Button</button>
+                        <button class="btn btn-success">Success Button</button>
+                        <button class="btn btn-danger">Danger Button</button>
+                    </div>
+                    <div class="d-flex gap-2 mt-3">
+                        <button class="btn btn-primary btn-lg">Large</button>
+                        <button class="btn btn-primary">Normal</button>
+                        <button class="btn btn-primary btn-sm">Small</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Form Section ========== -->
+    <section class="form-section" id="form">
+        <div class="container">
+            <h2 class="section-title mb-5">Contact Form with Validation</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form id="contactForm" novalidate>
+                        <div class="mb-4">
+                            <label for="formName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="formName" placeholder="Your Full Name" required>
+                            <div class="invalid-feedback">Please provide a valid name.</div>
+                        </div>
+
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <label for="formEmail" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="formEmail" placeholder="your@email.com" required>
+                                <div class="invalid-feedback">Please provide a valid email.</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="formPhone" class="form-label">Phone Number</label>
+                                <input type="tel" class="form-control" id="formPhone" placeholder="+1 (555) 000-0000" required>
+                                <div class="invalid-feedback">Please provide a valid phone.</div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="formSubject" class="form-label">Subject</label>
+                            <select class="form-control" id="formSubject" required>
+                                <option value="">Select a subject...</option>
+                                <option>General Inquiry</option>
+                                <option>Support</option>
+                                <option>Feedback</option>
+                                <option>Partnership</option>
+                            </select>
+                            <div class="invalid-feedback">Please select a subject.</div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="formMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="formMessage" rows="5" placeholder="Your message here..." required></textarea>
+                            <div class="invalid-feedback">Please provide a message.</div>
+                        </div>
+
+                        <div class="mb-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="formCheckbox1" required>
+                                <label class="form-check-label" for="formCheckbox1">I agree to receive updates</label>
+                                <div class="invalid-feedback">You must agree to continue.</div>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="formCheckbox2">
+                                <label class="form-check-label" for="formCheckbox2">Subscribe to our newsletter</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label">Preferred Contact Method</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="contactMethod" id="contactEmail" value="email" required>
+                                <label class="form-check-label" for="contactEmail">Email</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="contactMethod" id="contactPhone" value="phone">
+                                <label class="form-check-label" for="contactPhone">Phone</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="contactMethod" id="contactBoth" value="both">
+                                <label class="form-check-label" for="contactBoth">Both</label>
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="bi bi-send"></i> Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Tooltips & Popovers Section ========== -->
+    <section style="padding: 80px 0; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);">
+        <div class="container">
+            <h2 class="section-title mb-5">Tooltips & Popovers</h2>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <h4 class="mb-4" style="color: #cbd5e1;">Tooltip Examples</h4>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="tooltip" data-bs-placement="top" title="Top Tooltip">
+                            Top
+                        </button>
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="tooltip" data-bs-placement="right" title="Right Tooltip">
+                            Right
+                        </button>
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bottom Tooltip">
+                            Bottom
+                        </button>
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="tooltip" data-bs-placement="left" title="Left Tooltip">
+                            Left
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="mb-4" style="color: #cbd5e1;">Popover Examples</h4>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="popover" title="Popover Title" data-bs-content="This is a popover content with additional information.">
+                            Click me!
+                        </button>
+                        <button type="button" class="btn btn-outline-light" data-bs-toggle="popover" data-bs-placement="right" title="Another Popover" data-bs-content="Popovers are great for showing contextual information.">
+                            More Info
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== Sticky Footer ========== -->
+    <footer class="mt-auto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h5>About Us</h5>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Follow Us</h5>
+                    <ul>
+                        <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="bi bi-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AstraTech Solutions. All rights reserved. | <a href="#" style="color: #6366f1; text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: #6366f1; text-decoration: none;">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== Offcanvas Menu ========== -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Navigation Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item"><a class="nav-link" href="#carousel" data-bs-dismiss="offcanvas">Showcase</a></li>
+                <li class="nav-item"><a class="nav-link" href="#pricing" data-bs-dismiss="offcanvas">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery" data-bs-dismiss="offcanvas">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#alerts" data-bs-dismiss="offcanvas">Alerts</a></li>
+                <li class="nav-item"><a class="nav-link" href="#form" data-bs-dismiss="offcanvas">Contact</a></li>
+            </ul>
+            <hr style="border-color: rgba(255,255,255,0.1);">
+            <div>
+                <h6 style="color: #6366f1; margin-bottom: 15px;">Quick Links</h6>
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="#">Documentation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">GitHub</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== Welcome Modal ========== -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="bi bi-star-fill"></i> Welcome to AstraTech</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-3">Welcome to our comprehensive Bootstrap 5.3 showcase! This page demonstrates:</p>
+                    <ul style="color: #cbd5e1;">
+                        <li>Responsive Navbar with Dropdown Menus</li>
+                        <li>Image Carousel with Custom Captions</li>
+                        <li>Pricing Cards with Grid System</li>
+                        <li>Responsive Gallery</li>
+                        <li>Alert Components</li>
+                        <li>Badges and Buttons</li>
+                        <li>Form Validation</li>
+                        <li>Tooltips and Popovers</li>
+                        <li>Offcanvas Navigation</li>
+                        <li>Bootstrap Utilities for Design</li>
+                        <li>Sticky Footer Layout</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Let's Explore</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== Gallery Modals ========== -->
+    <div class="modal fade" id="galleryModal1" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Design Excellence</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=100%" alt="Design" style="border-radius: 10px; margin-bottom: 15px;">
+                    <p>This is a showcase of professional design work using Bootstrap components.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="galleryModal2" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Web Development</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=100%" alt="Development" style="border-radius: 10px; margin-bottom: 15px;">
+                    <p>Modern web development using latest Bootstrap 5.3 features and practices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="galleryModal3" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Innovation Hub</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div style="width: 100%; height: 300px; background: linear-gradient(135deg, #6366f1, #8b5cf6); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+                        <span style="color: white; font-size: 1.5rem;">Innovation Image</span>
+                    </div>
+                    <p>Innovative solutions crafted with Bootstrap's powerful framework.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="galleryModal4" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Technology Stack</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1560264357-8d9766985aa8?w=100%" alt="Technology" style="border-radius: 10px; margin-bottom: 15px;">
+                    <p>Cutting-edge technology integrated with Bootstrap components.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="galleryModal5" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Creative Solutions</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1591291621490-e9f05cbff236?w=100%" alt="Creative" style="border-radius: 10px; margin-bottom: 15px;">
+                    <p>Creative implementations using Bootstrap's versatile utilities.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="galleryModal6" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Startup Success</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=100%" alt="Startup" style="border-radius: 10px; margin-bottom: 15px;">
+                    <p>Success stories built with Bootstrap and modern web practices.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold">AstraTech</a>
+
+    <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#sidebar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item">Web Development</a></li>
+            <li><a class="dropdown-item">Cloud Solutions</a></li>
+            <li><a class="dropdown-item">AI Integration</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+
+        <form class="d-flex ms-3">
+          <input class="form-control form-control-sm me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-light btn-sm">Go</button>
+        </form>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- OFFCANVAS -->
+<div class="offcanvas offcanvas-end bg-dark text-light" id="sidebar">
+  <div class="offcanvas-header">
+    <h5>Navigation</h5>
+    <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item bg-dark text-light">Dashboard</li>
+      <li class="list-group-item bg-dark text-light">Projects</li>
+      <li class="list-group-item bg-dark text-light">Analytics</li>
+    </ul>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero text-center">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Building Scalable Digital Products</h1>
+    <p class="lead text-secondary mt-3">Modern solutions for ambitious businesses.</p>
+    <button class="btn btn-custom mt-4 px-4 py-2" data-bs-toggle="modal" data-bs-target="#demoModal">
+      Request Demo
+    </button>
+  </div>
+</section>
+
+<!-- ALERTS -->
+<div class="container my-5">
+  <div class="alert alert-success">Platform Updated Successfully</div>
+  <div class="alert alert-warning">Scheduled Maintenance Notice</div>
+  <div class="alert alert-danger">Security Alert: Update Required</div>
+  <div class="alert alert-info">New Features Released</div>
+</div>
+
+<!-- FEATURES -->
+<section id="features" class="container my-5">
+  <h2 class="text-center section-title mb-4">Core Features</h2>
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card p-4">
+        <h5>Performance</h5>
+        <p class="text-secondary">Optimized for speed and scalability.</p>
+        <span class="badge bg-primary">Fast</span>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-4">
+        <h5>Security</h5>
+        <p class="text-secondary">Enterprise-grade security protocols.</p>
+        <span class="badge bg-danger">Secure</span>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card p-4">
+        <h5>Reliability</h5>
+        <p class="text-secondary">99.9% uptime guarantee.</p>
+        <span class="badge bg-success">Stable</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- COMPARE PLANS TABLE -->
+<section id="compare" class="container my-5">
+  <h2 class="text-center section-title mb-5">Compare Plans</h2>
+  <div class="table-responsive">
+    <table class="table table-dark table-striped align-middle">
+      <thead>
+        <tr style="border-bottom: 2px solid rgba(99, 102, 241, 0.5);">
+          <th class="text-light fw-bold" style="padding: 20px; color: #e2e8f0;">Feature</th>
+          <th class="text-center text-light fw-bold" style="padding: 20px; color: #e2e8f0;">Starter</th>
+          <th class="text-center text-light fw-bold" style="padding: 20px; color: #e2e8f0;">Professional</th>
+          <th class="text-center text-light fw-bold" style="padding: 20px; color: #e2e8f0;">Enterprise</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+          <td class="fw-bold" style="padding: 15px 20px;">Public</td>
+          <td class="text-center" style="padding: 15px 20px;">
+            <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+          </td>
+          <td class="text-center" style="padding: 15px 20px;">
+            <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+          </td>
+          <td class="text-center" style="padding: 15px 20px;">
+            <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+          </td>
+        </tr>
+        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+          <td class="fw-bold" style="padding: 15px 20px;">Private</td>
+          <td class="text-center" style="padding: 15px 20px;">
+            <i class="bi bi-x-circle text-danger" style="font-size: 1.3rem;"></i>
+          </td>
+          <td class="text-center" style="padding: 15px 20px;">
+            <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+          </td>
+          <td class="text-center" style="padding: 15px 20px;">
+            <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+          </td>
+        </tr>
+        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+          <td class="fw-bold" style="padding: 15px 20px;">Permissions</td>
+          <td class="text-center" style="padding: 15px 20px;">
+            <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+          </td>
+          <td class="text-center" style="padding: 15px 20px;">
+            <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+          </td>
+          <td class="text-center" style="padding: 15px 20px;">
+            <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+          </td>
+        </tr>
+        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+          <td class="fw-bold" style="padding: 15px 20px;">Sharing</td>
+          <td class="text-center" style="padding: 15px 20px;">
+            <i class="bi bi-x-circle text-danger" style="font-size: 1.3rem;"></i>
+          </td>
+          <td class="text-center" style="padding: 15px 20px;">
+            <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+          </td>
+          <td class="text-center" style="padding: 15px 20px;">
+            <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+          </td>
+        </tr>
+        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+          <td class="fw-bold" style="padding: 15px 20px;">Unlimited members</td>
+          <td class="text-center" style="padding: 15px 20px;">
+            <i class="bi bi-x-circle text-danger" style="font-size: 1.3rem;"></i>
+          </td>
+          <td class="text-center" style="padding: 15px 20px;">
+            <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+          </td>
+          <td class="text-center" style="padding: 15px 20px;">
+            <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+          </td>
+        </tr>
+        <tr>
+          <td class="fw-bold" style="padding: 15px 20px;">Extra security</td>
+          <td class="text-center" style="padding: 15px 20px;">
+            <i class="bi bi-x-circle text-danger" style="font-size: 1.3rem;"></i>
+          </td>
+          <td class="text-center" style="padding: 15px 20px;">
+            <i class="bi bi-x-circle text-danger" style="font-size: 1.3rem;"></i>
+          </td>
+          <td class="text-center" style="padding: 15px 20px;">
+            <i class="bi bi-check-circle text-success" style="font-size: 1.3rem;"></i>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="container gallery my-5">
+  <h2 class="text-center section-title mb-4">Project Showcase</h2>
+  <div class="row g-4">
+    <div class="col-md-4"><img src="https://picsum.photos/500/400?1" class="img-fluid"></div>
+    <div class="col-md-4"><img src="https://picsum.photos/500/400?2" class="img-fluid"></div>
+    <div class="col-md-4"><img src="https://picsum.photos/500/400?3" class="img-fluid"></div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="container my-5">
+  <h2 class="text-center section-title mb-4">Get In Touch</h2>
+
+  <form class="needs-validation" novalidate>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <input type="text" class="form-control bg-dark text-light border-secondary" placeholder="Full Name" required>
+      </div>
+      <div class="col-md-6">
+        <input type="email" class="form-control bg-dark text-light border-secondary" placeholder="Email" required>
+      </div>
+    </div>
+
+    <div class="mt-3">
+      <textarea class="form-control bg-dark text-light border-secondary" rows="4" placeholder="Message"></textarea>
+    </div>
+
+    <div class="form-check mt-3">
+      <input class="form-check-input" type="checkbox" required>
+      <label class="form-check-label">Agree to Terms</label>
+    </div>
+
+    <button class="btn btn-custom mt-3">Submit</button>
+  </form>
+</section>
+
+<!-- MODAL -->
+<div class="modal fade" id="demoModal">
+  <div class="modal-dialog">
+    <div class="modal-content bg-dark text-light">
+      <div class="modal-header">
+        <h5>Request Demo</h5>
+        <button class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Our team will contact you within 24 hours.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center py-4">
+  <p class="text-secondary mb-0">© 2026 AstraTech. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
